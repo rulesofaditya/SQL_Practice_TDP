@@ -1,0 +1,43 @@
+<html>
+
+<h1>
+    <center> List of Employees(<%= employees.length %>)</center>
+</h1>
+
+<table>
+    <tr>
+        <td> Employee NO</td>
+        <td> Name</td>
+        <td> Salary </td>
+        <td> Department</td>
+    </tr>
+
+    <%
+    
+    for (let i=0; i<employees.length; i++){ 
+        
+        %>
+
+        <tr>
+            <td>
+                <%= employees[i].empno %>
+            </td>
+            <td>
+                <%= employees[i].name %>
+            </td>
+            <td>
+                <%= employees[i].salary %>
+            </td>
+            <td>
+                <%= employees[i].dept %>
+            </td>
+        </tr>
+
+        <% } %>
+
+
+</table>
+
+
+</html>
+
